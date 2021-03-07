@@ -24,29 +24,27 @@ Tener instalado y funcionando:
     python -m venv .venv --prompt=tblrender
 
     # En Windows
-    .venv\Scripts.activate.bat
+    .venv\Scripts\activate.bat
 
     # En Linux
     source .venv/bin/activate
 
+    # Actualizar pip y setuptools
     python -m pip install --upgrade pip
+    pip install --upgrade setuptools
 
+    # Instalar  paquetes requeridos
     pip install -r requirements.txt
 
 ## 2. Despliegue
 
-### Con pyinstaller
+Para desplegar el script en el entorno activo:
 
-Para construir la carpeta de despliegue de la aplicación en Windows, en primer lugar, con eentorno activado, instalar [Pyinstaller][pyinstaller]:
+    python setup.py develop
 
-    pip install pyinstaller
+Lo que genera el script `tblrender` en el entorno actual. Pude invocarse
+manualmente `tblrender` con el entorno activado, o bien puede invocarse
+directamente desde el path absoluto al script, por ejemplo:
 
-Luego simplemente ejecutar:
-
-    windist.bat
-
-
-La carpeta final con la herramienta y sus binarios es:
-
-    scrapper\dist\tblrender
+    .venv/bin/tblrender
 
