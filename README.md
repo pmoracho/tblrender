@@ -3,7 +3,6 @@
 Tabular data multi format render
 
 # Instalación
-
 ## Requerimientos básicos:
 
 Tener instalado y funcionando:
@@ -19,9 +18,10 @@ Tener instalado y funcionando:
 * actualizar `pip`
 * Instalar requerimientos
 
+```
     git clone https://github.com/pmoracho/tblrender.git
     cd tblrender
-    python -m venv .venv --prompt=tblrender
+    python3 -m venv .venv --prompt=tblrender
 
     # En Windows
     .venv\Scripts\activate.bat
@@ -35,6 +35,7 @@ Tener instalado y funcionando:
 
     # Instalar  paquetes requeridos
     pip install -r requirements.txt
+```
 
 ## 2. Despliegue
 
